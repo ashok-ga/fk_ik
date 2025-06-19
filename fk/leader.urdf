@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<robot name="Leader_New_URDF">
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.005375374 -0.0000813725 0.0172831" rpy="0 0 0"/>
+      <mass value="2.048754924426967"/>
+      <inertia ixx="0.00213" iyy="0.002752" izz="0.003848"
+               ixy="-1.3e-05" iyz="5e-06" ixz="-1.8e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_1_1">
+    <inertial>
+      <origin xyz="-0.01158142 -0.0040075 0.02982347" rpy="0 0 0"/>
+      <mass value="0.5964804004460253"/>
+      <inertia ixx="0.000147" iyy="0.000255" izz="0.000218"
+               ixy="-1e-06" iyz="3e-06" ixz="8e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.01209 -0.000302 -0.046" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_1_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.01209 -0.000302 -0.046" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_1_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_5_1">
+    <inertial>
+      <origin xyz="0.00010573 -0.07848991 -0.06254463" rpy="0 0 0"/>
+      <mass value="0.7678237021978409"/>
+      <inertia ixx="0.001322" iyy="0.000856" izz="0.000629"
+               ixy="1e-06" iyz="-0.000513" ixz="1e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.132199 0.001825 -0.229874" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_5_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.132199 0.001825 -0.229874" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_5_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_6_1">
+    <inertial>
+      <origin xyz="-0.00212294 0.06964579 -0.02918275" rpy="0 0 0"/>
+      <mass value="1.2180910453683607"/>
+      <inertia ixx="0.001686" iyy="0.002676" izz="0.002212"
+               ixy="0.000263" iyz="0.000275" ixz="-0.000317"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.132199 0.074357 -0.139482" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_6_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.132199 0.074357 -0.139482" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_6_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="trigger_1">
+    <inertial>
+      <origin xyz="0.01762819 -0.01272588 0.00881003" rpy="0 0 0"/>
+      <mass value="0.0567696522777978"/>
+      <inertia ixx="1.1e-05" iyy="1.2e-05" izz="2.2e-05"
+               ixy="7e-06" iyz="2e-06" ixz="-3e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.124211 0.008405 -0.100169" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="trigger_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.124211 0.008405 -0.100169" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="trigger_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_4_1">
+    <inertial>
+      <origin xyz="0.06790991 0.00016638 0.08949908" rpy="0 0 0"/>
+      <mass value="0.9217864009080158"/>
+      <inertia ixx="0.001191" iyy="0.002306" izz="0.001306"
+               ixy="-3e-06" iyz="-3e-06" ixz="-0.00098"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.028118 0.001931 -0.138659" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_4_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.028118 0.001931 -0.138659" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_4_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_3_1">
+    <inertial>
+      <origin xyz="0.17377653 0.02001411 0.00572933" rpy="0 0 0"/>
+      <mass value="1.422144834598423"/>
+      <inertia ixx="0.000591" iyy="0.01437" izz="0.014364"
+               ixy="-1.2e-05" iyz="1e-06" ixz="0.000204"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.249241 0.021435 -0.123867" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_3_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.249241 0.021435 -0.123867" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_3_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_2_1">
+    <inertial>
+      <origin xyz="-0.16520072 0.01956155 0.01326765" rpy="0 0 0"/>
+      <mass value="2.00595968501714"/>
+      <inertia ixx="0.001225" iyy="0.018553" izz="0.017907"
+               ixy="-0.000169" iyz="2e-05" ixz="0.002587"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.01209 0.021943 -0.077787" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_2_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.01209 0.021943 -0.077787" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="link_2_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- JOINTS -->
+  <joint name="Revolute_2" type="continuous">
+    <origin xyz="0.01209 0.000302 0.046" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link_1_1"/>
+    <axis xyz="0.0 0.0 -1.0"/>
+  </joint>
+
+  <joint name="Revolute_6" type="continuous">
+    <origin xyz="0.104081 0.000106 0.091215" rpy="0 0 0"/>
+    <parent link="link_4_1"/>
+    <child link="link_5_1"/>
+    <axis xyz="0.0 0.0 1.0"/>
+  </joint>
+
+  <joint name="Revolute_7" type="continuous">
+    <origin xyz="0.0 -0.072532 -0.090392" rpy="0 0 0"/>
+    <parent link="link_5_1"/>
+    <child link="link_6_1"/>
+    <axis xyz="0.0 -1.0 0.0"/>
+  </joint>
+
+  <joint name="Revolute_8" type="continuous">
+    <origin xyz="-0.007988 0.065952 -0.039313" rpy="0 0 0"/>
+    <parent link="link_6_1"/>
+    <child link="trigger_1"/>
+    <axis xyz="0.0 0.0 -1.0"/>
+  </joint>
+
+  <joint name="Revolute_9" type="continuous">
+    <origin xyz="0.277359 0.019504 0.014792" rpy="0 0 0"/>
+    <parent link="link_3_1"/>
+    <child link="link_4_1"/>
+    <axis xyz="-0.999848 0.0 0.017452"/>
+  </joint>
+
+  <joint name="Revolute_10" type="continuous">
+    <origin xyz="-0.261331 0.000508 0.04608" rpy="0 0 0"/>
+    <parent link="link_2_1"/>
+    <child link="link_3_1"/>
+    <axis xyz="0.0 1.0 0.0"/>
+  </joint>
+
+  <joint name="Revolute_11" type="continuous">
+    <origin xyz="0.0 -0.022245 0.031787" rpy="0 0 0"/>
+    <parent link="link_1_1"/>
+    <child link="link_2_1"/>
+    <axis xyz="0.0 1.0 0.0"/>
+  </joint>
+
+</robot>

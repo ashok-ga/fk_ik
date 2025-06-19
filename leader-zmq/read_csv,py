@@ -1,0 +1,41 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the CSV file
+df = pd.read_csv("impedance_log.csv")
+
+# === Plot Joint Positions ===
+plt.figure(figsize=(12, 6))
+for i in range(7):
+    plt.plot(df["time"], df[f"q{i}"], label=f"q{i}")
+plt.title("Joint Positions (rad)")
+plt.xlabel("Time (s)")
+plt.ylabel("Position (rad)")
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# === Plot Joint Errors ===
+plt.figure(figsize=(12, 6))
+for i in range(7):
+    plt.plot(df["time"], df[f"q_err{i}"], label=f"q_err{i}")
+plt.title("Joint Errors (rad)")
+plt.xlabel("Time (s)")
+plt.ylabel("Error (rad)")
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# === Plot Torques ===
+plt.figure(figsize=(12, 6))
+for i in range(7):
+    plt.plot(df["time"], df[f"tau{i}"], label=f"tau{i}")
+plt.title("Control Torques (Nm)")
+plt.xlabel("Time (s)")
+plt.ylabel("Torque (Nm)")
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
