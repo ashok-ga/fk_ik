@@ -77,6 +77,7 @@ def zmq_reader():
             pos_dict = json.loads(msg_str)
             joint_ids = [f"id{i}" for i in range(N_DYNAMIXEL)]
             ticks = np.array([pos_dict[k] for k in joint_ids], dtype=np.float64)
+            # print(ticks)
             if reference_ticks is None:
                 reference_ticks = ticks.copy()
             ticks_delta = ticks - reference_ticks
