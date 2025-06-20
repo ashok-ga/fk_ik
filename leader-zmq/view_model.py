@@ -19,6 +19,7 @@ viz = MeshcatVisualizer()
 robot.setVisualizer(viz)
 robot.initViewer()
 robot.loadViewerModel("pinocchio")
+viz.displayCollisions(False) 
 
 # ---- Show neutral pose first ----
 q_neutral = pin.neutral(model)
