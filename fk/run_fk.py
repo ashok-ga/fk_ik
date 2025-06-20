@@ -1,7 +1,7 @@
 import pinocchio as pin
 from pinocchio.robot_wrapper import RobotWrapper
 
-urdf_path = "leader.urdf"
+urdf_path = "robot.urdf"
 mesh_dir = "meshes"
 
 robot = RobotWrapper.BuildFromURDF(urdf_path, [mesh_dir])
@@ -20,7 +20,7 @@ pin.forwardKinematics(model, data, q)
 pin.updateFramePlacements(model, data)
 
 # Example: end-effector (replace with your frame name!)
-ee_name = " trigger_1"
+ee_name = "trigger_1"
 if ee_name in [f.name for f in model.frames]:
     ee_id = model.getFrameId(ee_name)
     ee_pose = data.oMf[ee_id]
